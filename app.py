@@ -1,21 +1,21 @@
 
 import streamlit as st
 
-st.title("サンプルアプリ②: 少し複雑なWebアプリ")
+st.title("提出アプリ")
 
-st.write("##### 動作モード1: 文字数カウント")
+st.write("##### 動作モード1: A専門家")
 st.write("入力フォームにテキストを入力し、「実行」ボタンを押すことで文字数をカウントできます。")
-st.write("##### 動作モード2: BMI値の計算")
+st.write("##### 動作モード2: B専門家")
 st.write("身長と体重を入力することで、肥満度を表す体型指数のBMI値を算出できます。")
 
 selected_item = st.radio(
     "動作モードを選択してください。",
-    ["文字数カウント", "BMI値の計算"]
+    ["A専門家", "B専門家"]
 )
 
 st.divider()
 
-if selected_item == "文字数カウント":
+if selected_item == "A専門家":
     input_message = st.text_input(label="文字数のカウント対象となるテキストを入力してください。")
     text_count = len(input_message)
 
