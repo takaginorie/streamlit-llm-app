@@ -7,6 +7,8 @@
 # ・回答を画面に表示
 # ※Streamlit Community Cloud での Python は 3.11 を想定
 # ------------------------------------------------------------
+from dotenv import load_dotenv
+load_dotenv()
 
 import os
 import streamlit as st
